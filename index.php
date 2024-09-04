@@ -34,3 +34,7 @@
     </div>
 </body>
 </html>
+<?php 
+    $nome = 'Marianna'; 
+    echo "<h1>$nome</h1>"; 
+?>
