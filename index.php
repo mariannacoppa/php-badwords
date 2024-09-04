@@ -1,3 +1,6 @@
+<?php 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +37,3 @@
     </div>
 </body>
 </html>
-<?php 
-    $nome = 'Marianna'; 
-    echo "<h1>$nome</h1>"; 
-?>
