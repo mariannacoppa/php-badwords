@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    Welcome <?php echo $nome." ".$cognome; ?> in php world
+    <!-- Welcome <?php // echo $nome." ".$cognome; ?> in php world -->
+    Welcome <?php echo $nome." ".str_replace('cognome', '***', 'cognome'); ?> in php world <br>
 </body>
 </html>
