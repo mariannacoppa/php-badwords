@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="col-10 offset-2 mt-3">
-                            <button class="btn btn-sm btn-primary">Invia</button>
+                            <button class="btn btn-sm btn-primary">Invia i tuoi dati</button>
                         </div>
                     </div>
                 </form>
