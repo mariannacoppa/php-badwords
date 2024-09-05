@@ -13,22 +13,22 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="./welcome.php" method="GET">
+                <form action="./badwords.php" method="GET">
                     <div class="row">
-                        <div class="offset-2 col-4">
+                        <div class="col-12">
                             <div class="form-group">
-                                <div class="control label">Inserisci il nome</div>
-                                <input type="text" class="form-control" name="nome" placeholder="Nome">
+                                <label for="" class="control-label">Paragrafo</label>
+                                <textarea name="paragraph" id="paragraph" class="form-control" placeholder="inserisci il testo"></textarea>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12">
                             <div class="form-group">
-                                <div class="control-label">Cognome</div>
-                                <input type="text" class="form-control" name="cognome" placeholder="Cognome">
+                                <label for="" class="control-label">Parola da censurare</label>
+                                <input type="text" name="word" class="form-control" placeholder="Parola da censurare">
                             </div>
                         </div>
-                        <div class="col-10 offset-2 mt-3">
-                            <button class="btn btn-sm btn-primary">Invia i tuoi dati</button>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-sm btn-primary">Invia</button>
                         </div>
                     </div>
                 </form>

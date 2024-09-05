@@ -1,6 +1,10 @@
 <?php 
-    $nome = $_GET['nome'];
-    $cognome = $_GET['cognome'];
+    // recupero i valori inseriti nel form
+    $paragraph = $_GET['paragraph'];
+    $word = $_GET['word'];
+
+    // sostituisco la parola da censurare con 3 asterischi
+    $censored_paragraph = str_replace($word, '***', $paragraph);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +19,13 @@
             <div class="col-12">
                 <div class="content">
                     <!-- stampo i nomi inseriti nel form -->
-                    <h1>Welcome <?php echo $nome." ".$cognome; ?> in php world</h1>
+                    <h4>Paragrafo non censurato: <?php echo $paragraph; ?></h4>
                     <!-- censuro la seconda parola inserita nel form -->
-                    <p>Welcome <?php echo $nome." ".str_replace('cognome', '***', 'cognome'); ?> in php world</p>
+                    <h4>Paragrafo censurato: <?php echo $censored_paragraph; ?> </h4>
                     <!-- stampo la lunghezza dei caratteri totali inseriti nel form -->
-                    <p>Somma di nome e cognome: <?php echo strlen($nome.$cognome); ?> caratteri</p>
+                    <p>Lunghezza senza censura: <?php echo strlen($paragraph); ?> caratteri</p>
                     <!-- Somma dei termini con il termine censurato -->
-                     <p>Somma di nome e cognome censurato: <?php echo strlen($nome.'***'); ?> </p>
+                    <p>Lunghezza con censura: <?php echo strlen($censored_paragraph); ?> caratteri</p>
                 </div>
             </div>
         </div>
